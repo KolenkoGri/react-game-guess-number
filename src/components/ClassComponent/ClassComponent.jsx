@@ -91,7 +91,8 @@ export class ClassComponent extends React.Component {
           </label>
           <input className={style.input} type='number' id='user_number'
             onChange={this.handleChange} value={this.state.userNumber}/>
-          <button className={style.btn}> Угадать</button>
+          <button className={this.state.restart ? style.disabled : style.btn}>
+          Угадать</button>
         </form>
         <button className = {this.state.restart ? style.btn : style.btnAgain}
           onClick={this.handleRestart}>

@@ -45,3 +45,7 @@
 .btnAgain {
     display: none;
 }
+
+.disabled{
+    pointer-events: none;
+}
